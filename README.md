@@ -23,7 +23,7 @@ Sending Sensor data to Twilio using Iot
 ### Sending Sms to the Users by  Thursday 21th March,2019
 Sensing SMS to nearby drivers to slow down
 
-##Probable addition
+## Probable addition
 
 Sending Sensor data to Azure and computing the traffic levels 
 Tracking vehicle location using GPS and sending sms to the drivers in the corresponding area
