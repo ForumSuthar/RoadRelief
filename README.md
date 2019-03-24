@@ -36,15 +36,19 @@ run using the following docker image
 
 ### Twilio NB-Iot
 
+
 You need the twilio development kit and sim card to use twilio NB-iot.
 The following provides detailed instruction of the Basic setup.
 [Twilio-account-setup](https://www.twilio.com/docs/wireless/tutorials/apn-configuration)
 
-compile the arduino code given[here](https://github.com/ForumSuthar/SmsUpdates/tree/master/arduino)
+
+compile the arduino code given [here](https://github.com/ForumSuthar/SmsUpdates/tree/master/arduino)
 Upload it into the board once the setup is complete
+
 
 Additional library used: Twilio Breakout library
 [Breakout-Arduino-Library](https://github.com/twilio/Breakout_Arduino_Library)
+
 
 You can download this library and ad as Zip as follows:
 Open Arduino IDE-> Sketch->Include .zip library-> the browse to given library and click OK
