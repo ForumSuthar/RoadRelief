@@ -1,0 +1,128 @@
+\hypertarget{classelma_1_1_process}{}\section{elma\+::Process Class Reference}
+\label{classelma_1_1_process}\index{elma::Process@{elma::Process}}
+
+
+An abstract base class for processes.  
+
+
+
+
+{\ttfamily \#include $<$process.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a355d4150a5de734fcb8ff654b7eabf3e}\label{classelma_1_1_process_a355d4150a5de734fcb8ff654b7eabf3e}} 
+enum {\bfseries status\+\_\+type} \{ {\bfseries U\+N\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}, 
+{\bfseries S\+T\+O\+P\+P\+ED}, 
+{\bfseries R\+U\+N\+N\+I\+NG}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_ae3b98871432794ea262f4a26dfeab3f7}\label{classelma_1_1_process_ae3b98871432794ea262f4a26dfeab3f7}} 
+\mbox{\hyperlink{classelma_1_1_process_ae3b98871432794ea262f4a26dfeab3f7}{Process}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Names process \char`\"{}no name\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classelma_1_1_process_a4a29af963c350ce23ae8a91109affcf5}{Process}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor that takes a name for the process. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classelma_1_1_process_aeaf53c300dbde2444bf7a5948b70a9f6}\label{classelma_1_1_process_aeaf53c300dbde2444bf7a5948b70a9f6}} 
+virtual void {\bfseries init} ()=0
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_ae3ffee069f55704617740bdc0142aecc}\label{classelma_1_1_process_ae3ffee069f55704617740bdc0142aecc}} 
+virtual void {\bfseries start} ()=0
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a9731a2218270c49af835c606c09bd6c5}\label{classelma_1_1_process_a9731a2218270c49af835c606c09bd6c5}} 
+virtual void {\bfseries update} ()=0
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a5aed57974a5acbe0d1f298584c91528e}\label{classelma_1_1_process_a5aed57974a5acbe0d1f298584c91528e}} 
+virtual void {\bfseries stop} ()=0
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a7ce946a55e71578bc1d33cf0a826c0de}\label{classelma_1_1_process_a7ce946a55e71578bc1d33cf0a826c0de}} 
+string {\bfseries name} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_ae43200bae94b94df1ec5cc10ff6b191b}\label{classelma_1_1_process_ae43200bae94b94df1ec5cc10ff6b191b}} 
+status\+\_\+type {\bfseries status} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_ad210b775ce04da6d89fdc75435bab15f}\label{classelma_1_1_process_ad210b775ce04da6d89fdc75435bab15f}} 
+high\+\_\+resolution\+\_\+clock\+::duration {\bfseries period} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a8da013223752f15787a3ff5ed2190211}\label{classelma_1_1_process_a8da013223752f15787a3ff5ed2190211}} 
+int {\bfseries num\+\_\+updates} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a347b1fd6fd7501bfd4b3ac63a9ee811e}\label{classelma_1_1_process_a347b1fd6fd7501bfd4b3ac63a9ee811e}} 
+time\+\_\+point$<$ high\+\_\+resolution\+\_\+clock $>$ {\bfseries start\+\_\+time} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a809b1e38a5504600d252f8f62a8bf487}\label{classelma_1_1_process_a809b1e38a5504600d252f8f62a8bf487}} 
+high\+\_\+resolution\+\_\+clock\+::duration {\bfseries last\+\_\+update} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_a2252f8767f4f437297c8a342b60b484e}\label{classelma_1_1_process_a2252f8767f4f437297c8a342b60b484e}} 
+high\+\_\+resolution\+\_\+clock\+::duration {\bfseries previous\+\_\+update} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_aeef9e71fc307480c7d90639775d6ce71}\label{classelma_1_1_process_aeef9e71fc307480c7d90639775d6ce71}} 
+string {\bfseries status\+\_\+string} ()
+\item 
+\mbox{\hyperlink{classelma_1_1_channel}{Channel}} \& \mbox{\hyperlink{classelma_1_1_process_ab392ade636276d047634df7605970164}{channel}} (string name)
+\begin{DoxyCompactList}\small\item\em Access a channel with the given name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classelma_1_1_process_a713075c26ec23e09576ec966fb4be6ea}\label{classelma_1_1_process_a713075c26ec23e09576ec966fb4be6ea}} 
+double {\bfseries milli\+\_\+time} ()
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_ae2c6efe05132c558fe44c0cf301113e2}\label{classelma_1_1_process_ae2c6efe05132c558fe44c0cf301113e2}} 
+double {\bfseries delta} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classelma_1_1_process_adddd5c43ff870a047aa66db4edf82a7e}\label{classelma_1_1_process_adddd5c43ff870a047aa66db4edf82a7e}} 
+class {\bfseries Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract base class for processes. 
+
+Derived classes should imlement the init, start, update, and stop methods. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classelma_1_1_process_a4a29af963c350ce23ae8a91109affcf5}\label{classelma_1_1_process_a4a29af963c350ce23ae8a91109affcf5}} 
+\index{elma::Process@{elma::Process}!Process@{Process}}
+\index{Process@{Process}!elma::Process@{elma::Process}}
+\subsubsection{\texorpdfstring{Process()}{Process()}}
+{\footnotesize\ttfamily elma\+::\+Process\+::\+Process (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes a name for the process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the process \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classelma_1_1_process_ab392ade636276d047634df7605970164}\label{classelma_1_1_process_ab392ade636276d047634df7605970164}} 
+\index{elma::Process@{elma::Process}!channel@{channel}}
+\index{channel@{channel}!elma::Process@{elma::Process}}
+\subsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classelma_1_1_channel}{Channel}} \& elma\+::\+Process\+::channel (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Access a channel with the given name. 
+
+A more elaborate description of the constructor. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the process, for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+elma\+\_\+project/elma/process.\+h\item 
+elma\+\_\+project/elma/process.\+cc\end{DoxyCompactItemize}
