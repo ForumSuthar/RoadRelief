@@ -62,17 +62,18 @@ create a new function in Twillio account as given here [Functions](https://www.t
 
 add the Javascript code available [here](https://github.com/ForumSuthar/SmsUpdates/tree/master/Twilio) in the function created in Twilio App
 
-##Acknowledgements
+
+## Acknowledgements
 I would like to thank Prof. Klavins for the awesome coursework material.
 
-##References
+## References
 https://github.com/klavinslab/elma_project
 
 https://github.com/klavins/ECEP520
 
 http://wiringpi.com/examples/blink/
 
-##License
+## License
 This software is open source and uses the MIT license. Details can be found here.
 
 
