@@ -1,29 +1,50 @@
-# RoadRelief
+# SmsUpdates
 
-Traffic Monitoring and Congestion Relief by detecting congestion at early stage and sending out messages to all surrounding drivers to slow down.
+Thr project takes in sensor values and sends updates vida sms on timely basis.
+
+step1:
+Processes smsSystem is created using Elma and it keeps updating the channel with sensorvalues
+It sends data serially to Twilio arduino Board.
+
+step2:
+This data once received is sent to Twilio Iot account via broadband, through the sim card and antenna available on the kit.
+
+step3:
+function created in Twilio Iot is Triggered once it receives command from the Twilio NB-Iot sim.
 
 ## Hardware to be used:
 Twilio Iot Development kit
-Ultrasonic Sensors
 
-## Milestones:
+## setup
 
-### Exporting Elma to arduino by  Friday 15th March,2019
-Exporting complete Elma to arduino and to be able to pass basic test cases
+### Elma
 
-### Reading values from Sensors by  Sunday 17th March,2019
-Reading values from ultrasonic sensor and predicting the speed of the vehicle and stage of congestion
+elma can be installed as directed here https://github.com/klavinslab/elma
+git clone the current repository
+'''
+git clone 
+'''
+run using the following docker image
+'''
+'''
 
-### Setting up NB-Iot Twilio account and kit by  Tuesday 19th March,2019
-Setting up Twilio account using the Twilio sim and be able to send Basic commands over NB-Iot
+### Twilio NB-Iot
 
-### Sending Sensor Data as commands to Twilio using Iot by  Wednesday 20th March,2019
-Sending Sensor data to Twilio using Iot
+You need the twilio development kit and sim card to use twilio NB-iot.
+The following provides detailed instruction of the Basic setup.
+https://www.twilio.com/docs/wireless/tutorials/apn-configuration
 
-### Sending Sms to the Users by  Thursday 21th March,2019
-Sensing SMS to nearby drivers to slow down
+compile the arduino code given here   and upload it into the board once the setup is complete
 
-## Probable addition
+Additional library used: Twilio Breakout library
 
-Sending Sensor data to Azure and computing the traffic levels 
-Tracking vehicle location using GPS and sending sms to the drivers in the corresponding area
+
+create a new function in Twillio account as follows:
+
+
+add the Javascript code available here
+
+
+
+
+
