@@ -29,11 +29,6 @@ git clone https://github.com/ForumSuthar/SmsUpdates.git
 ```
 
 
-run using the following docker image
-'''
-
-'''
-
 ### Twilio NB-Iot
 
 
