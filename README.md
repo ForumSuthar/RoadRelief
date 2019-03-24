@@ -12,6 +12,17 @@ This data once received is sent to Twilio Iot account via broadband, through the
 step3:
 function created in Twilio Iot is Triggered once it receives command from the Twilio NB-Iot sim.
 
+## Milestoned Decided:
+
+* Importing Elma to arduino
+* Reading Data via Ultrasonic sensor
+* Sending Sms based on the Data from Ultrasonic Sensor
+
+## Change of plans
+
+* It was not feasible to import elma on Twilio arduino
+* Elma excuted via docker to send data serially to arduino
+
 ## Hardware to be used:
 Twilio Iot Development kit
 
@@ -21,7 +32,6 @@ Twilio Iot Development kit
 
 elma can be installed as directed here https://github.com/klavinslab/elma
 git clone the current repository
-
 
 
 ```
@@ -51,6 +61,19 @@ Open Arduino IDE-> Sketch->Include .zip library-> the browse to given library an
 create a new function in Twillio account as given here [Functions](https://www.twilio.com/docs/runtime/functions)
 
 add the Javascript code available [here](https://github.com/ForumSuthar/SmsUpdates/tree/master/Twilio) in the function created in Twilio App
+
+##Acknowledgements
+I would like to thank Prof. Klavins for the awesome coursework material.
+
+##References
+https://github.com/klavinslab/elma_project
+
+https://github.com/klavins/ECEP520
+
+http://wiringpi.com/examples/blink/
+
+##License
+This software is open source and uses the MIT license. Details can be found here.
 
 
 
