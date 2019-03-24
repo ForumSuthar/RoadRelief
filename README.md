@@ -68,10 +68,10 @@ add the Javascript code available [here](https://github.com/ForumSuthar/SmsUpdat
 ![](https://github.com/ForumSuthar/SmsUpdates/blob/master/Images/Console.JPG)
 
 ### Data from Arduino
-
+![](https://github.com/ForumSuthar/SmsUpdates/blob/master/Images/Arduino.JPG)
 
 ### Sms Received
-
+![](https://github.com/ForumSuthar/SmsUpdates/blob/master/Images/sms.png)
 
 ## Acknowledgements
 I would like to thank Prof. Klavins for the awesome coursework material.
